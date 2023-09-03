@@ -42,7 +42,7 @@ public class JwtUtils {
         return Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtSecret));
     }
 
-    private static final Logger logger = LoggerFactory.getLogger(jwtUtils.class);
+    private static final Logger logger = LoggerFactory.getLogger(JwtUtils.class);
 
     public boolean validateJwtToken(String authToken) {
         try {
